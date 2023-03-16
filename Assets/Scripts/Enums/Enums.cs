@@ -10,3 +10,18 @@ public enum Direction {
     right,
     none
 }
+
+public enum ItemType {
+    Seed,
+    Commodity,
+    WateringTool,
+    HoeingTool,
+    ChoppingTool,
+    BreakingTool,
+    ReapingTool,
+    CollectingTool,
+    FurniTure,
+    ReapableScenary,
+    none,
+    count
+}
