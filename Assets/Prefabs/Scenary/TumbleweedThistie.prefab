@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4571217017257605303}
   - component: {fileID: 4571217017257605256}
+  - component: {fileID: 5113926279358192431}
   - component: {fileID: 2351301892922805308}
+  - component: {fileID: 2126986087568552715}
   m_Layer: 0
   m_Name: TumbleweedThistie
   m_TagString: Untagged
@@ -85,6 +87,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!61 &5113926279358192431
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571217017257605302}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.2225405}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8860741, y: 1.4180019}
+  m_EdgeRadius: 0
 --- !u!61 &2351301892922805308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98,7 +126,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.019649982, y: 0.3613842}
+  m_Offset: {x: -0.007887393, y: 0.31943792}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -109,5 +137,17 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.685605, y: 0.52627134}
+  m_Size: {x: 1.4367127, y: 0.30952}
   m_EdgeRadius: 0
+--- !u!114 &2126986087568552715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571217017257605302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cacd42c050d54f9288e980700927d181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

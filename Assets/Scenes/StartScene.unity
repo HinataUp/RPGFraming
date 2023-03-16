@@ -51088,6 +51088,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 574703504}
     m_Modifications:
+    - target: {fileID: 2351301892922805308, guid: 784ef266b5131b548a30ae04f20210f1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4571217017257605302, guid: 784ef266b5131b548a30ae04f20210f1, type: 3}
       propertyPath: m_Name
       value: TumbleweedThistie (6)

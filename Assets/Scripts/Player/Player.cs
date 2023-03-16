@@ -40,19 +40,22 @@ public class Player : SingletonMonoBehavior<Player> {
     private bool idleLeft;
 
     private Rigidbody2D playerRigidbody2D;
+    // 暂时隐藏警告
+#pragma warning disable 414
     private Direction playerDirection;
+#pragma warning restore 414
     private float movementSpeed;
-    private bool _playerInputIsDisabled = false;
-
-    // public bool PlayerInputIsDisabled {
-    //     get;
-    //     set;
-    // } = false;
+    // private bool _playerInputIsDisabled = false;
 
     public bool PlayerInputIsDisabled {
-        get => _playerInputIsDisabled;
-        set => _playerInputIsDisabled = value;
-    }
+        get;
+        set;
+    } = false;
+
+    // public bool PlayerInputIsDisabled {
+    //     get => _playerInputIsDisabled;
+    //     set => _playerInputIsDisabled = value;
+    // }
 
     protected override void Awake() {
         base.Awake();

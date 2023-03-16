@@ -2,10 +2,15 @@
 
 
 public class Settings {
-    // player movement
-    public static  float runningSpped = 5.333f;
-    public static  float walkingSpped = 2.666f;
+    // 淡入淡出设置,参数
+    public const float fadeInSeconds = 0.25f;
+    public const float fadeOutSeconds = 0.35f;
+    public const float targetAlpha = 0.45f;
     
+    // player movement
+    public static float runningSpped = 5.333f;
+    public static float walkingSpped = 2.666f;
+
     // player animation parameters
     public static int xInput;
     public static int yInput;

@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9169809269659043716}
   - component: {fileID: 9169809269659043719}
-  - component: {fileID: 9169809269659043718}
+  - component: {fileID: 997913855645801826}
+  - component: {fileID: 8470539604909206481}
+  - component: {fileID: 1961335057000886031}
   m_Layer: 0
   m_Name: WildOakScenary
   m_TagString: Untagged
@@ -85,7 +87,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!61 &9169809269659043718
+--- !u!60 &997913855645801826
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169809269659043717}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 3, y: 6}
+    newSize: {x: 3, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.24165308, y: 1.766456}
+      - {x: 1.1312783, y: 2.3586347}
+      - {x: 1.4762756, y: 4.3285065}
+      - {x: 1.2752951, y: 5.854862}
+      - {x: -0.37769777, y: 6.0149803}
+      - {x: -1.4499016, y: 5.2016153}
+      - {x: -1.142559, y: 2.7014964}
+      - {x: -0.42816907, y: 1.6881111}
+      - {x: -0.34811005, y: 0.56925225}
+      - {x: 0.30574775, y: 0.57183075}
+--- !u!61 &8470539604909206481
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,7 +135,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.021133661, y: 0.35828972}
+  m_Offset: {x: -0.03745091, y: 0.2471751}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -109,5 +146,17 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1825032, y: 0.71657944}
+  m_Size: {x: 1.3072236, y: 0.43452954}
   m_EdgeRadius: 0
+--- !u!114 &1961335057000886031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169809269659043717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cacd42c050d54f9288e980700927d181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
