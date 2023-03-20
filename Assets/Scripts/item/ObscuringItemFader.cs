@@ -26,7 +26,7 @@ public class ObscuringItemFader : MonoBehaviour {
         float currentAlpha = spriteRenderer.color.a;
         float distance = 1f - currentAlpha;
         while (1f - currentAlpha > 0.01f) {
-            currentAlpha += distance / Settings.fadeOutSeconds * Time.deltaTime;
+            currentAlpha += distance / Settings.fadeInSeconds * Time.deltaTime;
             spriteRenderer.color = new Color(1f, 1f, 1f, currentAlpha);
             yield return null;
         }

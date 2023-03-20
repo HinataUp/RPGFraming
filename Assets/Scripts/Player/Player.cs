@@ -45,17 +45,17 @@ public class Player : SingletonMonoBehavior<Player> {
     private Direction playerDirection;
 #pragma warning restore 414
     private float movementSpeed;
-    // private bool _playerInputIsDisabled = false;
-
-    public bool PlayerInputIsDisabled {
-        get;
-        set;
-    } = false;
+    private bool _playerInputIsDisabled = false;
 
     // public bool PlayerInputIsDisabled {
-    //     get => _playerInputIsDisabled;
-    //     set => _playerInputIsDisabled = value;
-    // }
+    //     get;
+    //     set;
+    // } = false;
+
+    public bool PlayerInputIsDisabled {
+        get => _playerInputIsDisabled;
+        set => _playerInputIsDisabled = value;
+    }
 
     protected override void Awake() {
         base.Awake();
@@ -94,15 +94,15 @@ public class Player : SingletonMonoBehavior<Player> {
 
     private void PlayerWalkInput() {
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
-            isRunning = false;
-            isWalking = true;
-            isIdle = false;
-            movementSpeed = Settings.walkingSpped;
-        } else {
-            isRunning = true;
             isWalking = false;
+            isRunning = true;
             isIdle = false;
             movementSpeed = Settings.runningSpped;
+        } else {
+            isWalking = true;
+            isRunning = false;
+            isIdle = false;
+            movementSpeed = Settings.walkingSpped;
         }
     }
 
@@ -115,8 +115,8 @@ public class Player : SingletonMonoBehavior<Player> {
         }
 
         if (inputX != 0 || inputY != 0) {
-            isRunning = true;
-            isWalking = false;
+            isWalking = true;
+            isRunning = false;
             isIdle = false;
             movementSpeed = Settings.runningSpped;
             if (inputX < 0) {

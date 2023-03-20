@@ -83,5 +83,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 5212625445892097550, guid: 722889c05493fda4fbc6d43b26fb11a5, type: 3}
+      propertyPath: itemCode
+      value: 10001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 722889c05493fda4fbc6d43b26fb11a5, type: 3}
