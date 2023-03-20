@@ -1,4 +1,8 @@
-﻿public delegate void MovementDelegate(
+﻿
+using System;
+using System.Collections.Generic;
+
+public delegate void MovementDelegate(
     float inputX, float inputY,
     bool isWalking, bool isRunning, bool isIdle, bool isCarrying,
     bool isUsingToolRight, bool isUsingToolLeft, bool isUsingToolUp, bool isUsingToolDown,
@@ -11,6 +15,13 @@
 
 
 public static class EventHandler {
+    // 定义一个委托类型,以便于输入一些参数
+    public static event Action<InventoryLocation, List<InventoryItem>> InventoryUpdatedEvent;
+    
+    public static void CallInventoryUpdatedEvent(InventoryLocation inventoryLocation, List<InventoryItem> inventoryItems) {
+        InventoryUpdatedEvent?.Invoke(inventoryLocation, inventoryItems);
+    }
+
     public static event MovementDelegate MovementEvent;
 
     public static void CallMovementEvent(float inputX, float inputY,
@@ -28,4 +39,7 @@ public static class EventHandler {
             isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
             idleUp, idleDown, idleRight, idleLeft, toolEffect);
     }
+
+
+  
 }

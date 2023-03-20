@@ -6,7 +6,11 @@ public class Settings {
     public const float fadeInSeconds = 0.25f;
     public const float fadeOutSeconds = 0.35f;
     public const float targetAlpha = 0.35f;
-    
+
+    // inventory settings
+    public const int playerInitInventorySize = 36;
+    public const int playerMaxInventorySize = 72;
+
     // player movement
     public static float runningSpped = 7.2f;
     public static float walkingSpped = 4.2f;

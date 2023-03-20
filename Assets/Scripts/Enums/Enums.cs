@@ -11,6 +11,13 @@ public enum Direction {
     none
 }
 
+public enum InventoryLocation {
+    player,
+    chest,
+    count
+}
+
+
 public enum ItemType {
     Seed,
     Commodity,
