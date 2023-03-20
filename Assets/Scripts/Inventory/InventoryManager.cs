@@ -61,8 +61,9 @@ public class InventoryManager : SingletonMonoBehavior<InventoryManager> {
         inventoryItem.itemCode = itemCode;
         inventoryItem.amount = 1;
         inventoryList.Add(inventoryItem);
-        DebugPrintInventoryList(inventoryList);
+        // DebugPrintInventoryList(inventoryList);
     }
+
 
     private void AddItemAtPosition(List<InventoryItem> inventoryList, int itemCode, int itemPosition) {
         InventoryItem inventoryItem = new InventoryItem();
@@ -72,7 +73,7 @@ public class InventoryManager : SingletonMonoBehavior<InventoryManager> {
         inventoryList[itemPosition] = inventoryItem;
         // inventoryList.Add(inventoryItem);
         // 控制台debug 检测
-        DebugPrintInventoryList(inventoryList);
+        // DebugPrintInventoryList(inventoryList);
     }
 
 
@@ -98,13 +99,14 @@ public class InventoryManager : SingletonMonoBehavior<InventoryManager> {
         }
     }
 
-    private void DebugPrintInventoryList(List<InventoryItem> inventoryList) {
-        foreach (var InventoryItem in inventoryList) {
-            Debug.Log("itemDescription: " +
-                      InventoryManager.Instance.GetItemDetails(InventoryItem.itemCode).itemDescription + " amount: " +
-                      InventoryItem.amount);
-        }
-
-        Debug.Log("=======pass=======");
-    }
+    // private void DebugPrintInventoryList(List<InventoryItem> inventoryList) {
+    //     foreach (var InventoryItem in inventoryList) {
+    //         Debug.Log("itemDescription: " +
+    //                   InventoryManager.Instance.GetItemDetails(InventoryItem.itemCode).itemDescription + " amount: " +
+    //                   InventoryItem.amount);
+    //     }
+    //
+    //     Debug.Log("=======pass=======");
+    // }
+    
 }

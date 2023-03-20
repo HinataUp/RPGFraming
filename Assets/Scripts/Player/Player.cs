@@ -4,6 +4,9 @@ using UnityEngine;
 
 
 public class Player : SingletonMonoBehavior<Player> {
+    // 通过摄像机获取玩家的位置
+    private Camera mainCamera;
+    
     //movement parameters
     private float inputX;
     private float inputY;
@@ -60,6 +63,9 @@ public class Player : SingletonMonoBehavior<Player> {
     protected override void Awake() {
         base.Awake();
         playerRigidbody2D = GetComponent<Rigidbody2D>();
+        
+        // 在Awake中获取摄像机
+        mainCamera = Camera.main;
     }
 
     private void Update() {
@@ -156,5 +162,12 @@ public class Player : SingletonMonoBehavior<Player> {
         isSwingingToolRight = false;
         isSwingingToolUp = false;
         toolEffect = ToolEffect.none;
+    }
+    // 通过摄像机获取玩家的位置
+    // 如果需要将玩家的位置转换为屏幕上的坐标，可以使用Camera的WorldToScreenPoint()方法将2D位置转换为3D位置再转换为屏幕坐标。
+    public Vector3 GetPlayerPosition() {
+        var a  = mainCamera.fieldOfView;
+        // Debug.Log("显示摄像头坐标");
+        return mainCamera.WorldToScreenPoint(transform.position);
     }
 }
